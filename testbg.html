@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Flip.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Observer.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Draggable.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/EaselPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/MotionPathPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/PixiPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/EasePack.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/CustomEase.min.js"></script>
+
+    </head>
+    <style>
+
+
+    body{
+    margin:0;
+    padding:0;
+    background:#ACE6FF;
+    }
+
+    #clouds{
+    background:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/56901/bg-clouds.png") repeat 0 0 transparent;
+    width:100%;
+    height:190px;
+    }
+
+
+        
+    </style>
+    <body>
+        <div id="clouds"></div>
+    </body>
+    <script>
+        $(window).on("load", function() {
+        var tl = new TimelineMax({repeat:-1});
+        tl.to("#clouds", 30, {
+            backgroundPosition: "-2247px 0px",
+            //autoRound:false,
+            ease: Linear.easeNone
+        });
+
+        });
+    </script>
+</html>
